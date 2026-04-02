@@ -9,7 +9,7 @@
 
 
 ### Activity 2
-<img width="960" height="720" alt="Break-down Week 1 Activity 2" src="https://github.com/user-attachments/assets/8d0d1c78-be41-4381-bb61-49e0ba0b6326" />
+<img width="960" height="720" alt="Break-down Week 1 Activity 2 (1)" src="https://github.com/user-attachments/assets/39d62e0f-5483-4ac5-8ec9-a8a44534ed89" />
 
 
 
