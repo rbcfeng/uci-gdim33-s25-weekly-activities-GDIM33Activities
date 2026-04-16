@@ -13,7 +13,13 @@
 
 
 
-## W2
-Write your W2 Devlog here.
+## W3
+### Activity 1
+<img width="987" height="738" alt="Screenshot 2026-04-15 175410" src="https://github.com/user-attachments/assets/8fe75a13-c7cf-4d3a-854b-b5960613630a" />
 
-Continue adding additional headers below this one for future weeks and future activities.
+
+### Activity 2
+1. It is advantageous to save the event name for the explore-to-dialogue state transition as Scene variable because this transition will have to control the animals' fall, the cursor lock of the player, and the dialogue of the walrus. Saving it as a Scene variable will allow the affected objects to function properly without having to reference all the time, like a Singleton.
+2. The Debug.Log() node allowed me to check if the transition from the exploration state to the dialogue state works. I was testing if the transition works, but I noticed that the debug message did not pop up on the console when I ran the game. I checked my graph and it seems that I've used the wrong node for the mouse click on the walrus. Because of this, I noticed that I've used a custom event, rather than the OnMouseDown node for the mouse click. From this, I was able to get the transition from exploration to dialogue to work.
+3. The SetCursor Lock state will probably not be relevant to my Vertical Slice, because it is a 2D visual novel game, so the player will have to explore the background by clicking on UI and dialogue options.
+4. The concept of "game state" will be relevant to my Vertical Slice because there will be a exploration state and a dialogue state. The exploration state will display the quest UI, as well as UI for the amount of money the player has and the time remaining. The dialogue state will include the sprites of the NPC and the player, as well as the dialogue and option buttons.
