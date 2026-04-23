@@ -23,3 +23,22 @@
 2. The Debug.Log() node allowed me to check if the transition from the exploration state to the dialogue state works. I was testing if the transition works, but I noticed that the debug message did not pop up on the console when I ran the game. I checked my graph and it seems that I've used the wrong node for the mouse click on the walrus. Because of this, I noticed that I've used a custom event, rather than the OnMouseDown node for the mouse click. From this, I was able to get the transition from exploration to dialogue to work.
 3. The SetCursor Lock state will probably not be relevant to my Vertical Slice, because it is a 2D visual novel game, so the player will have to explore the background by clicking on UI and dialogue options.
 4. The concept of "game state" will be relevant to my Vertical Slice because there will be a exploration state and a dialogue state. The exploration state will display the quest UI, as well as UI for the amount of money the player has and the time remaining. The dialogue state will include the sprites of the NPC and the player, as well as the dialogue and option buttons.
+
+
+
+## W4
+### Activity 1
+In my build, the only thing that is playable right now is advancing the dialogue and choosing the player replies. My playtesting goals include how much the writing makes sense and if the dialogue UI is easy to understand.
+
+Playtest Team: Sebastian Magana, Landon Her, Rebecca Feng, Kaleb Reyes, Jess Tran, Frances Kim
+
+Playtest Notes:
+- The UI buttons are a little pixelated. Change the settings to point.
+- The pause between the end of the dialogue and the player replies appearing is a little too long. Consider shortening removing the waiting seconds.
+- Think about where the click to interact will align.
+
+
+### Activity 2
+1. A writer could add more dialogue because they would only be editing the Scriptable Objects, then adding it onto an array which will be handled by the NewDialogueEvent Node. Buttons for the player's replies will also automatically be added because they would be instantiated.
+2. The limit would be the dialogue nodes that fill may fill up the screen, otherwise the number of dialogue nodes are limitless.
+3. Regenerate Nodes will update the nodes that are written in code to be created in the Script Graphs to use.
