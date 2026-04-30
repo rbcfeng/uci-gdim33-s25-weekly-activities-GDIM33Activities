@@ -42,3 +42,21 @@ Playtest Notes:
 1. A writer could add more dialogue because they would only be editing the Scriptable Objects, then adding it onto an array which will be handled by the NewDialogueEvent Node. Buttons for the player's replies will also automatically be added because they would be instantiated.
 2. The limit would be the dialogue nodes that fill may fill up the screen, otherwise the number of dialogue nodes are limitless.
 3. Regenerate Nodes will update the nodes that are written in code to be created in the Script Graphs to use.
+
+
+
+## W5
+### Activity 1
+ScriptableObjects - Branching Dialogue Quest System
+1. When interacting with the NPC Boss character after the first conversation, there is an if statement in the NPC Boss scripting graph that checks if the correct item has been choosen. Test if the if statement functions properly through a debug log message that returns the output of the if statement.
+2. Create one ScriptableObject for a quest state for giving the correct item if the if statement returns true, then the quest state will return a positive outcome. In the console, the debug log message should display a positive message for giving the correct item, and the message that the sprite is updated.
+3. In the UI, the dialogue box and the dialogue text should show up, along with a cheerful sprite of the NPC Boss, but the text will not be updated. Test this by running the game.
+4. In the NPC Boss scripting graph, use the Set Text node to get the dialogue text and have the input be the ScriptableObject successful quest state that updates the text with the string list in the ScriptableObject that displays first index of the positive messages. Test this by running the game.
+5. Use a for each loop that reads each element of the string list in the successful quest state ScriptableObject upon player mouse click. The messages should appear in the Debug Log. Test this by running the game.
+6. Use a Set Text node to connect the for each loop to update the positive messages on the dialogue text for each player mouse click. Test this by running the game.
+7. Create a custom event and a variable that represents how much money the player has. The custom event is triggered when the dialogue of getting the correct object ends. Test this by creating a debug log message that indicates that the money reward event is triggered.
+8. Create a quest HUD that displays the amount of money the player has in a textbox. Hook up the text with the triggered custom event by connecting it with the Set Text node. Test this by running the game.
+
+
+### Activity 2
+I was able to build the feature of collecting the phone, as well as displaying the positive messages when the player collects the phone in the debug log before class ended.
