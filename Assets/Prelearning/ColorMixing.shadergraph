@@ -578,7 +578,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_BlendMode": 6
+    "m_BlendMode": 13
 }
 
 {
@@ -741,8 +741,8 @@
     "m_Hidden": false,
     "m_Value": {
         "r": 1.0,
-        "g": 0.2106916308403015,
-        "b": 0.8355918526649475,
+        "g": 0.6315789222717285,
+        "b": 0.0,
         "a": 0.0
     },
     "isMainColor": false,
