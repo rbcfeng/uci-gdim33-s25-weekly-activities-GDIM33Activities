@@ -42,3 +42,45 @@ Playtest Notes:
 1. A writer could add more dialogue because they would only be editing the Scriptable Objects, then adding it onto an array which will be handled by the NewDialogueEvent Node. Buttons for the player's replies will also automatically be added because they would be instantiated.
 2. The limit would be the dialogue nodes that fill may fill up the screen, otherwise the number of dialogue nodes are limitless.
 3. Regenerate Nodes will update the nodes that are written in code to be created in the Script Graphs to use.
+
+
+
+## W5
+### Activity 1
+ScriptableObjects - Branching Dialogue Quest System
+1. When interacting with the NPC Boss character after the first conversation, there is an if statement in the NPC Boss scripting graph that checks if the correct item has been choosen. Test if the if statement functions properly through a debug log message that returns the output of the if statement.
+2. Create one ScriptableObject for a quest state for giving the correct item if the if statement returns true, then the quest state will return a positive outcome. In the console, the debug log message should display a positive message for giving the correct item, and the message that the sprite is updated.
+3. In the UI, the dialogue box and the dialogue text should show up, along with a cheerful sprite of the NPC Boss, but the text will not be updated. Test this by running the game.
+4. In the NPC Boss scripting graph, use the Set Text node to get the dialogue text and have the input be the ScriptableObject successful quest state that updates the text with the string list in the ScriptableObject that displays first index of the positive messages. Test this by running the game.
+5. Use a for each loop that reads each element of the string list in the successful quest state ScriptableObject upon player mouse click. The messages should appear in the Debug Log. Test this by running the game.
+6. Use a Set Text node to connect the for each loop to update the positive messages on the dialogue text for each player mouse click. Test this by running the game.
+7. Create a custom event and a variable that represents how much money the player has. The custom event is triggered when the dialogue of getting the correct object ends. Test this by creating a debug log message that indicates that the money reward event is triggered.
+8. Create a quest HUD that displays the amount of money the player has in a textbox. Hook up the text with the triggered custom event by connecting it with the Set Text node. Test this by running the game.
+
+
+### Activity 2
+I was able to build the feature of collecting the phone, as well as displaying the positive messages when the player collects the phone in the debug log before class ended.
+
+
+
+## W6
+### Activity 1
+
+1. Something that is new in the playtesting build from Milestone 1 is how the player can now collect a phone item and complete the NPC Boss's quest. There is dialogue implemented that shows the NPC's reaction to completing the quest.
+
+2. [Itch Link](https://rebeccf2.itch.io/playtest-2-for-milestone-2)
+
+3. Playtesting goal: My playtesting goal is for the playtesters to find any bugs that are present, aside from the ones I have already found in the build.
+
+Playtesting Notes:
+- Clicking the phone item to complete the quest is intuitive
+- No UI is needed to tell the player to interact with items if they already know that they can interact with the NPC by clicking on it
+
+
+### Activity 2
+1. The Multiply setting makes the resulting color darker and less saturated because when the RGB values are mulitplied with two colors, their values from 0.0 to 1.0 will decrease since it would be multipled by numbers 1 or less than 1. As the values decrease, the color will be darker and less saturated.
+2. The resulting value will be more translucent because as the alpha value is multipled that is 1 or less than 1 to the RGB value, the resulting value will decrease, which means the value is approaching towards 0, which means more transparency on the 0.0 to 1.0 alpha value scale.
+3. The shader gets the UV values from the UV map of the shiba material.
+4. This sounds exciting to me because although I may not be the best at math, learning about how blending colors work will be very useful when I draw digitally using blending modes.
+
+
