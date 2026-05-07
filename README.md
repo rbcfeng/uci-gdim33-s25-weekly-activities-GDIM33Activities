@@ -60,3 +60,27 @@ ScriptableObjects - Branching Dialogue Quest System
 
 ### Activity 2
 I was able to build the feature of collecting the phone, as well as displaying the positive messages when the player collects the phone in the debug log before class ended.
+
+
+
+## W6
+### Activity 1
+
+1. Something that is new in the playtesting build from Milestone 1 is how the player can now collect a phone item and complete the NPC Boss's quest. There is dialogue implemented that shows the NPC's reaction to completing the quest.
+
+2. [Itch Link](https://rebeccf2.itch.io/playtest-2-for-milestone-2)
+
+3. Playtesting goal: My playtesting goal is for the playtesters to find any bugs that are present, aside from the ones I have already found in the build.
+
+Playtesting Notes:
+- Clicking the phone item to complete the quest is intuitive
+- No UI is needed to tell the player to interact with items if they already know that they can interact with the NPC by clicking on it
+
+
+### Activity 2
+1. The Multiply setting makes the resulting color darker and less saturated because when the RGB values are mulitplied with two colors, their values from 0.0 to 1.0 will decrease since it would be multipled by numbers 1 or less than 1. As the values decrease, the color will be darker and less saturated.
+2. The resulting value will be more translucent because as the alpha value is multipled that is 1 or less than 1 to the RGB value, the resulting value will decrease, which means the value is approaching towards 0, which means more transparency on the 0.0 to 1.0 alpha value scale.
+3. The shader gets the UV values from the UV map of the shiba material.
+4. This sounds exciting to me because although I may not be the best at math, learning about how blending colors work will be very useful when I draw digitally using blending modes.
+
+
