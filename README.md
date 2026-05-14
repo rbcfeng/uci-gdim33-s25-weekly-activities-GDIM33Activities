@@ -84,3 +84,13 @@ Playtesting Notes:
 4. This sounds exciting to me because although I may not be the best at math, learning about how blending colors work will be very useful when I draw digitally using blending modes.
 
 
+
+## W7
+### Activity 1
+1. The data from the Vertex color node came from the color vertex data of the shiba mesh.
+2. The color on the shiba is blended at the edge of different regions of color because each vertex of the shiba mesh creates interpolation, which blends the colors from each vertex depending on the distance between each vertex.
+3. The shiba from step 3 is less detailed than the shiba from last week because the vertex color is used to check errors of the mesh data, rather than be something that will be displayed in game. The vertex color can be used to check for errors when breakpoints of Debug Log nodes are unable to check for them.
+4. There is an error of vertex normals in a small area near the shiba's tail above the hind legs on the left. There appears to be a small dent in the mesh.
+5. We can use the color output of a shader to determine the UV vertex data and test if the textures are consistent with the mesh, and that it maps correctly around the model.
+6. There is an error in lighting on step 4 because the vertex normals are not consistent with the surrounding areas. There is a dent, rather than a consistent smooth surface of the shiba model.
+7. The Blend Mode is set to Additive because it allows the colors to appear brighter, while the darker colors of the texture stays the same color.
