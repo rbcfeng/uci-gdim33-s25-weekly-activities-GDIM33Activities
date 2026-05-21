@@ -94,3 +94,27 @@ Playtesting Notes:
 5. We can use the color output of a shader to determine the UV vertex data and test if the textures are consistent with the mesh, and that it maps correctly around the model.
 6. There is an error in lighting on step 4 because the vertex normals are not consistent with the surrounding areas. There is a dent, rather than a consistent smooth surface of the shiba model.
 7. The Blend Mode is set to Additive because it allows the colors to appear brighter, while the darker colors of the texture stays the same color.
+
+
+
+## W8
+### Activity 1
+1. Something new in my build since Milestone 2 is how the player is able to change Scenes to another place in the office.
+2. [Itch Link](https://rebeccf2.itch.io/milestone-2)
+3. Playtesting goal: My playtesting goal is for the playtesters to give insight on the UI of the scene.
+
+Playtesting Notes:
+- There should be a price UI that shows how much the retro game console costs, so players aren't skeptical about what the purchase button does.
+- The phone item should be in another room so they don't click on it first before they talk to the NPC boss for initiating the quest.
+
+### Activity 2A
+1. We are utilizing the stencil buffer in that the Compare Function is used to determine the pass/fail operations of values of the shiba object. The stencil buffer acts like a "stencil" in that for each value, depending on where it is on the Scene. If the outline is on the shiba object, then the shiba color buffer will be drawn and replaces the outline value when the value passes. As a result, this creates the effect of the outline of the object.
+2. The DrawOpaqueObjects rendering pass seems to be drawing almost the exact same thing twice. It is being drawn twice because it is using two different shaders, one for the ground and one for the shiba in the Scene. The ground is using the Universal Rendering Pipeline Lit shader, while the shiba object is using the Cel Shading shader.
+3. To improve this inefficiency, it might be a good idea to have both the objects use the same shader. The ground could also use a Cel Shading shader, or the shiba object could use the Universal Rendering Pipeline Lit shader.
+4. The range of values from -1 to 1 for DarkShadowsAmount makes sense because the values are like a percentage, like 0.9 represents 90% and 1 represents 100%. The negative values represent the reverse of shadows and light, like how shadows on an objects swaps where the light is casted on the object.
+5. We added instead of multiplied the results of all the different lighting because when the results are multipled, they only darken the colors, rather than keeping the results light and visible.
+6. Changing the Layer of where the Shiba is on enables and disables the outline because the Outline layer uses the stencil buffer and the Outline shader to achieve the outline effect, while the Default layer only uses the Cel Shading shader for the shiba. When the Outline layer is enabled, the outline effect is in play.
+7. Setting the shadow color to white removes the lighting because since the shadow color is set to multiply on the Shader Graph, when the color is white, the colors do not get darker, and instead stays the same original color.
+
+
+8. I think a performance implication might include avoiding to modify material settings on an Update event because the program might produce a lot of copies of a material every frame. It might be better to modify a material when a certain event happens instead.
