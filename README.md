@@ -118,3 +118,19 @@ Playtesting Notes:
 
 
 8. I think a performance implication might include avoiding to modify material settings on an Update event because the program might produce a lot of copies of a material every frame. It might be better to modify a material when a certain event happens instead.
+
+
+
+## W9
+### Activity 1
+Game: Red Dead Redemption 2
+
+Notes:
+- Colors of the screen are saturated and has a bloom effect when player activates Dead Eye (post-processing effect, which might involve colors and vignette visual effect, might incorporate this feature as brigher colors and some vignette when the player turns on the lights of a dark room)
+- mouse over enemies activate UI (effect that enables a tag on the object that allows the UI to show up on the enemy, might incorporate this feature as hovering over items and having the UI pop up for it)
+
+### Activity 2
+
+<img width="1316" height="790" alt="Screenshot 2026-05-27 194849" src="https://github.com/user-attachments/assets/cbcab9a8-ba8b-4271-9806-e384f3d0ed0d" />
+
+I was working on the Lighting Shader Graph in one of my scenes. An improvement I made to my ShaderGraph was increasing the visibility of the shine of the material that is applied to the phone item. This allowed the shine on the phone item to be more visible, which allows exploration for items to be more easier.
