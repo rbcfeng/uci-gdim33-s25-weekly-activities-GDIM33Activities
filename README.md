@@ -126,8 +126,8 @@ Playtesting Notes:
 Game: Red Dead Redemption 2
 
 Notes:
-- Colors of the screen are saturated and has a bloom effect when player activates Dead Eye (post-processing effect, which might involve colors and vignette visual effect, might incorporate this feature as brigher colors and some vignette when the player turns on the lights of a dark room)
-- mouse over enemies activate UI (effect that enables a tag on the object that allows the UI to show up on the enemy, might incorporate this feature as hovering over items and having the UI pop up for it)
+- Colors of the screen are saturated and has a bloom effect when player activates Dead Eye (post-processing effect, which might involve colors and vignette visual effect, might incorporate this feature as brigher colors and some vignette when the player turns on the lights of a dark room, ShaderGraph with color parameters, maybe Add blending mode)
+- mouse over enemies activate UI (effect that enables a tag on the object that allows the UI to show up on the enemy, might incorporate this feature as hovering over items and having the UI pop up for it, rendering pipeline with stencil buffer and color buffer, outline tag/layer)
 
 ### Activity 2
 
