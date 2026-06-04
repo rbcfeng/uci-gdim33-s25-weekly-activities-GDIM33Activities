@@ -134,3 +134,22 @@ Notes:
 <img width="1316" height="790" alt="Screenshot 2026-05-27 194849" src="https://github.com/user-attachments/assets/cbcab9a8-ba8b-4271-9806-e384f3d0ed0d" />
 
 I was working on the Lighting Shader Graph in one of my scenes. An improvement I made to my ShaderGraph was increasing the visibility of the shine of the material that is applied to the phone item. This allowed the shine on the phone item to be more visible, which allows exploration for items to be more easier.
+
+
+
+## W10
+### Activity 1
+1. Something new in my build since Milestone 3 is the addition of the friend NPC and its Scene that corresponds to it.
+2. [Itch Link](https://rebeccf2.itch.io/final-gdim-33-playtest)
+3. Playtesting goal: My playtesting goal is for the playtesters to give insight on the navigation system of the game.
+
+Playtesting Notes:
+- The navigation system is not too confusing, and the playtester likes how they were able to move through different Scenes
+- Discovered bug where clicking on the boss NPC after successfully completing a quest will generate money and not advance dialogue
+- The first dialogue line skips when talking to the boss NPC again after obtaining a quest
+
+### Activity 2
+My plannning strategy will include a diagram of all necessary systems that will be in the game, such as how the UI will interact with the gameplay, the player system and how the player's perspective will change throughout gameplay, and the different objects that interact with the player. My plannning strategies will also include a list of core mechanics that will be in the game, and how the systems will be architectured to help function the core mechanics. There will also be a list of tasks that describe how to implement these core mechanics and how the different systems in the game will be built. This planning can affect my perception of my scope because since I'm creating a list of core mechanics and seeing how they will be implemented in the game for each system, I would be able to see what kind of tasks I have and how much time it would take.
+
+### Activity 3
+I was able to fix the error of the friend NPC not loading in the park Scene, as well as fixing some UI issues. I've also added a list of strings for the dialogue nodes that will soon be implemented so the player knows who's speaking. For the friend Scene, I've added UI that appears when the player's mouse hovers over the friend NPC.
